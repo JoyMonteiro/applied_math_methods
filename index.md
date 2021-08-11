@@ -21,7 +21,7 @@ and then press play. This is useful if you want to revisit some
 part of the lecture skipping other parts.
 
 * Lecture 1: [Introduction and Analytical Framework for
-  modelling](./courses/math_methods/slides/lecture1/index.html)
-* Lecture 2: [Analytical Framework and Course Structure](./courses/math_methods/slides/lecture2/index.html)
-* Lecture 3: [Linear Algebra](./courses/math_methods/slides/lecture3/index.html)
-* Lecture 4: [Linear Algebra: Vector Spaces](./courses/math_methods/slides/lecture4/index.html)
+  modelling](./slides/lecture1/index.html)
+* Lecture 2: [Analytical Framework and Course Structure](./slides/lecture2/index.html)
+* Lecture 3: [Linear Algebra](./slides/lecture3/index.html)
+* Lecture 4: [Linear Algebra: Vector Spaces](./slides/lecture4/index.html)
