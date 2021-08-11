@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Applied Math Methods (ECS323)</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="line_spacing.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Applied Math Methods (ECS323)</h1>
+					or, how to solve it in the Geosciences!
+				</section>
+				<section>
+					<h3>How to solve what?</h3>
+					<ul>
+						<li class="fragment">The Birth, Life and Death of Planets</li>
+						<li class="fragment">Generously borrows from Physics, Chemistry and Mathematics</li>
+						<li class="fragment">But not "just" Physics, Chemistry and
+						Mathematics!</li>
+						<li class="fragment">from AU to Å,
+							from microseconds to gigayears</li>
+					</ul>
+				</section>
+				<section>
+					<h3>The grand scheme of things</h3>
+					<ul>
+						<li class="fragment">Cosmology: Birth, Life and Death of the Universe</li>
+						<li class="fragment">Astronomy and Astrophysics: Birth, Life and Death of Galaxies, Planetary Systems and Stars</li>
+						<li class="fragment">Geosciences: What remains :)</li>
+					</ul>
+				</section>
+
+	<section>
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Composition/Dynamics of the Mantle</div>
+					<div>
+				<a title="Kelvinsong / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:Earth_poster.svg"><img width="512" alt="Earth poster" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Earth_poster.svg/512px-Earth_poster.svg.png"></a>
+					</div>
+
+				</section>
+
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Dynamics of the Crust and Surface (Tectonics, Geomorphology)</div>
+					<div>
+<a title="KDS4444 / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Subduction-en.svg"><img width="512" alt="Subduction-en" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Subduction-en.svg/512px-Subduction-en.svg.png"></a>					</div>
+
+				</section>
+
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Dynamics on the Surface (Rivers, Glaciers, Weathering)</div>
+					<div>
+<a title="National Park Service / Public domain" href="https://commons.wikimedia.org/wiki/File:YOSE_29_Glacial-features_WEB.jpg"><img width="512" alt="YOSE 29 Glacial-features WEB" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/YOSE_29_Glacial-features_WEB.jpg/512px-YOSE_29_Glacial-features_WEB.jpg"></a>					</div>
+
+				</section>
+
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Hydrosphere (Oceans, Groundwater, Lakes, Rivers)</div>
+					<div>
+<a title="John Evans and Howard Periman, USGS / Public domain" href="https://commons.wikimedia.org/wiki/File:Watercyclesummary.jpg"><img width="512" alt="Watercyclesummary" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Watercyclesummary.jpg"></a>
+					</div>
+
+				</section>
+
+
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Atmosphere (Winds, Rainfall, Weather)</div>
+					<div>
+						<a title="scied.ucar.edu
+						ete.cet.edu
+
+						eo.ucar.edu / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Atmosphere_layers.jpg"><img width="512" alt="Atmosphere layers" src="https://upload.wikimedia.org/wikipedia/commons/3/36/Atmosphere_layers.jpg"></a>
+										</div>
+
+				</section>
+
+
+				<section>
+					<h3>What remains?</h3>
+					<div class="title"> Biosphere (Biogeochemistry, Ecosystems, Evolution)</div>
+					<div>
+<a title="E.L. Cavan, A. Belcher, A. Atkinson, S. L. Hill, S. Kawaguchi, S. McCormack, B. Meyer, S. Nicol, L. Ratnarajah, K. Schmidt, D. K. Steinberg, G. A. Tarling &amp; P. W. Boyd / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" href="https://commons.wikimedia.org/wiki/File:Role_of_Antarctic_krill_in_biogeochemical_cycles.webp"><img width="512" alt="Role of Antarctic krill in biogeochemical cycles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Role_of_Antarctic_krill_in_biogeochemical_cycles.webp/512px-Role_of_Antarctic_krill_in_biogeochemical_cycles.webp.png"></a>
+					</div>
+
+				</section>
+			</section>
+
+				<section><h3>A lot of stuff remains!</h3></section>
+
+				<section>
+					<h3>Analytical Lens</h3>
+					<ul>
+						<li class="fragment">Stuff (solids, liquids, gases)</li>
+						<li class="fragment">Energy</li>
+						<li class="fragment">Sources and Sinks</li>
+						<li class="fragment">How does it move from source to sink?</li>
+						<li class="fragment">How quickly?</li>
+						<li class="fragment">How much?</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/math/math.js'},
+					{ src: 'plugin/audio-slideshow/RecordRTC.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true }
+
+				],
+				math: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: { Macros: { angstrom: "{\\mathring{A}}" } }
+			},
+				audio: {
+					prefix: 'audio/',
+					suffix: '.MP3',
+				}
+			});
+		</script>
+	</body>
+</html>

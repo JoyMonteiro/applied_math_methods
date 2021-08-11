@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Applied Mathematical Methods (ECS323)
 
-You can use the [editor on GitHub](https://github.com/JoyMonteiro/applied_math_methods/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This course is intended to give you a flavour of the kind
+of scientific problems we encounter in the geosciences,
+and the mathematical approaches that we use to model and
+solve these problems.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The lectures will be added to the below list, and you can
+view them as and when they are uploaded.
 
-### Markdown
+## Instructions for viewing lectures
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+On clicking the link for any lecture, you will be directed
+to a [reveal.js](https://revealjs.com/) presentation. At the
+bottom of the screen, you will find a play button. Press play,
+sit back and let the magic of modern web technologies unfold!
 
-```markdown
-Syntax highlighted code block
+If you want to start the audio from some slide in the middle,
+just navigate to that slide (using arrow keys or the space bar),
+and then press play. This is useful if you want to revisit some
+part of the lecture skipping other parts.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JoyMonteiro/applied_math_methods/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* Lecture 1: [Introduction and Analytical Framework for
+  modelling](./courses/math_methods/slides/lecture1/index.html)
+* Lecture 2: [Analytical Framework and Course Structure](./courses/math_methods/slides/lecture2/index.html)
+* Lecture 3: [Linear Algebra](./courses/math_methods/slides/lecture3/index.html)
+* Lecture 4: [Linear Algebra: Vector Spaces](./courses/math_methods/slides/lecture4/index.html)
