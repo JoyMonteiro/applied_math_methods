@@ -1,4 +1,4 @@
-# Applied Mathematical Methods (ECS323)
+# Applied Mathematical Methods (EC3134)
 
 This course is intended to give you a flavour of the kind
 of scientific problems we encounter in the geosciences,
