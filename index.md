@@ -25,3 +25,5 @@ part of the lecture skipping other parts.
 * Lecture 2: [Analytical Framework and Course Structure](./slides/lecture2/index.html)
 * Lecture 3: [Linear Algebra](./slides/lecture3/index.html)
 * Lecture 4: [Linear Algebra: Vector Spaces](./slides/lecture4/index.html)
+* Lecture 5: [Linear Algebra: Orthogonality](./slides/lecture5/index.html)
+* Lecture 6: [Linear Algebra: Linear Transformations](./slides/lecture6/index.html)
