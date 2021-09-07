@@ -27,3 +27,5 @@ part of the lecture skipping other parts.
 * Lecture 4: [Linear Algebra: Vector Spaces](./slides/lecture4/index.html)
 * Lecture 5: [Linear Algebra: Orthogonality](./slides/lecture5/index.html)
 * Lecture 6: [Linear Algebra: Linear Transformations](./slides/lecture6/index.html)
+* Lecture 7: [Eigenvalues, Eigenvectors and Diagonalization](.//slides/lecture7/index.html)
+* Lecture 8: [SVD and applications](./slides/lecture8/index.html)
