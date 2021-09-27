@@ -29,3 +29,4 @@ part of the lecture skipping other parts.
 * Lecture 6: [Linear Algebra: Linear Transformations](./slides/lecture6/index.html)
 * Lecture 7: [Eigenvalues, Eigenvectors and Diagonalization](.//slides/lecture7/index.html)
 * Lecture 8: [SVD and applications](./slides/lecture8/index.html)
+* Lecture 9: [Coordinate Transformations](./slides/lecture9/index.html)
