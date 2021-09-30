@@ -30,3 +30,4 @@ part of the lecture skipping other parts.
 * Lecture 7: [Eigenvalues, Eigenvectors and Diagonalization](.//slides/lecture7/index.html)
 * Lecture 8: [SVD and applications](./slides/lecture8/index.html)
 * Lecture 9: [Coordinate Transformations](./slides/lecture9/index.html)
+* Lecture 10: [Fourier Analysis - 1](./slides/lecture10/index.html)
