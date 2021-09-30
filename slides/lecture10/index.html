@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Applied Math Methods (ECS3314)</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="line_spacing.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Applied Math Methods (EC3134)</h1>
+					Flavours of Fourier Analysis
+				</section>
+
+				<section>
+
+					<section>
+						<h3>DE Perspective</h3>
+
+						$y = \frac{df}{dx},\ y(0) = a,\ y(1) = b$
+
+
+							<ul class="fragment">
+								<li>Can we approximate the solution?</li>
+								<li>Completeness and Convergence</li>
+								<li>Boundary conditions</li>
+							</ul>
+					</section>
+
+					<section>
+					<h3>Wave Perspective</h3>
+					<p>
+					$\sin\frac{2\pi}{\lambda}(x  - vt),\ \cos\frac{2\pi}{\lambda}(x  - vt)$
+					</p>
+
+
+
+						<ul class="fragment">
+							<li>Wavenumber, frequency</li>
+							<li>Phase of wave</li>
+							<li>phase speed, group velocity</li>
+						</ul>
+				</section>
+
+				<section>
+					<img src="images/wk.png" alt="">
+				</section>
+
+				<section>
+					<h3>Sig. Proc. Perspective</h3>
+					<p>Frequency Content and Filtering</p>
+					<ul class="fragment">
+						<li>Frequency Response</li>
+						<li>Phase Response</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<img src="images/LPF.webp" width=1000px alt="">
+				</section>
+			</section>
+
+			<section>
+				<h3>Fourier Series</h3>
+
+				<p>$f(t) = \Sigma_n a_n\exp{(int)}$</p>
+
+
+				<p>$f$ must be periodic, $n \in \mathbb{N}$</p>
+				<ul class="fragment">
+					<li>Information Compression</li>
+					<li>PDE to ODE</li>
+				</ul>
+
+			</section>
+
+			<section>
+			<section>
+				<h3>Fourier Transform</h3>
+
+				$\hat{f}(\zeta) = \int_{-\infty}^{\infty} f(x)\exp{(-i2\pi x\zeta) dx}$
+				<p>$f$ is not periodic, $\zeta \in \mathbb{R}$</p>
+			</section>
+			<section>
+				<h3><a href="https://en.wikipedia.org/wiki/Fourier_transform#Basic_properties">Properties</a></h3>
+				<ul>
+					<li>Linearity</li>
+					<li>Time/Frequency Shifting</li>
+					<li>Parseval's Theorem</li>
+					<li>Convolution</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Convolution</h3>
+			</section>
+			</section>
+
+
+
+
+
+
+</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/math/math.js'},
+					{src: 'plugin/chalkboard/chalkboard.js'},
+					{ src: 'plugin/audio-slideshow/RecordRTC.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true },
+				],
+				math: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: { Macros: { angstrom: "{\\mathring{A}}" } }
+			},
+				audio: {
+					prefix: 'audio/',
+					suffix: '.MP3',
+				},
+				chalkboard: {
+					src: 'chalkboard.json',
+					theme: 'whiteboard',
+					readonly: false,
+				},
+				keyboard: {
+            67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+            66: function() { RevealChalkboard.toggleChalkboard() },     // toggle chalkboard when 'b' is pressed
+            46: function() { RevealChalkboard.clear() },        // clear chalkboard when 'DEL' is pressed
+             8: function() { RevealChalkboard.reset() },        // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function() { RevealChalkboard.download() },     // downlad recorded chalkboard drawing when 'd' is pressed
+            88: function() { RevealChalkboard.colorNext() },    // cycle colors forward when 'x' is pressed
+            89: function() { RevealChalkboard.colorPrev() },    // cycle colors backward when 'y' is pressed
+        },
+			});
+		</script>
+	</body>
+</html>
