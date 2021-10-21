@@ -31,5 +31,5 @@ part of the lecture skipping other parts.
 * Lecture 8: [SVD and applications](./slides/lecture8/index.html)
 * Lecture 9: [Coordinate Transformations](./slides/lecture9/index.html)
 * Lecture 10: [Fourier Analysis - 1](./slides/lecture10/index.html)
-* Lecture 11: [Differential Equations: Orientation](.slides/lecture11/index.html)
-* Lecture 12: [Differential Equations: Refresher](.slides/lecture12/index.html)
+* Lecture 11: [Differential Equations: Orientation](./slides/lecture11/index.html)
+* Lecture 12: [Differential Equations: Refresher](./slides/lecture12/index.html)
