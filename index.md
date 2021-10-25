@@ -33,3 +33,5 @@ part of the lecture skipping other parts.
 * Lecture 10: [Fourier Analysis - 1](./slides/lecture10/index.html)
 * Lecture 11: [Differential Equations: Orientation](./slides/lecture11/index.html)
 * Lecture 12: [Differential Equations: Refresher](./slides/lecture12/index.html)
+* Lecture 13: [Differential Equations: Qualitative Analysis](./slides/lecture13/index.html)
+* Lecture 14: [Differential Equations: Qualitative Analysis 2](./slides/lecture14/index.html)
