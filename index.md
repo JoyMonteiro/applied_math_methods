@@ -35,3 +35,7 @@ part of the lecture skipping other parts.
 * Lecture 12: [Differential Equations: Refresher](./slides/lecture12/index.html)
 * Lecture 13: [Differential Equations: Qualitative Analysis](./slides/lecture13/index.html)
 * Lecture 14: [Differential Equations: Qualitative Analysis 2](./slides/lecture14/index.html)
+* Lecture 15: [Differential Equations: Higher Order Equations](./slides/lecture15/index.html)
+* Lecture 16: [Differential Equations: Qualitative Analysis (2nd order DEs)](./slides/lecture16/index.html)
+* Lecture 17: [Differential Equations: Wrapup](./slides/lecture17/index.html)
+* Lecture 18: [Differential Equations: Snowball Earth](./slides/lecture18/index.html)

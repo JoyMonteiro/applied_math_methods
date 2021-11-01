@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Applied Math Methods (ECS3134)</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="line_spacing.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Applied Math Methods (ECS3134)</h1>
+					Application: Snowball Earth
+				</section>
+
+				<section>
+					<h3>Big Picture</h3>
+					<a title="NASA, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:The-NASA-Earth%27s-Energy-Budget-Poster-Radiant-Energy-System-satellite-infrared-radiation-fluxes.jpg"><img width="512" alt="The-NASA-Earth&#039;s-Energy-Budget-Poster-Radiant-Energy-System-satellite-infrared-radiation-fluxes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/The-NASA-Earth%27s-Energy-Budget-Poster-Radiant-Energy-System-satellite-infrared-radiation-fluxes.jpg/512px-The-NASA-Earth%27s-Energy-Budget-Poster-Radiant-Energy-System-satellite-infrared-radiation-fluxes.jpg"></a>
+
+
+				</section>
+
+				<section>
+					<h3>Ice-Albedo Feedback</h3>
+					<p style="font-size:40px">
+					$\frac{dT}{dt} = S(1-\alpha (T)) - OLR(T,CO_2)$
+					</p>
+					<a title="Tovarg, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Ice_albedo_feedback.jpg"><img width="512" alt="Ice albedo feedback" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ice_albedo_feedback.jpg/512px-Ice_albedo_feedback.jpg"></a>
+				</section>
+
+				<section>
+				<section>
+					<h3>Some code!</h3>
+					<pre><code data-trim class="python">
+def net_radiation(co2, T, cloud_forcing):
+
+	if co2 < 0:
+	  return 1e5
+	return solar_constant*(1 - albedo(T))/4 +
+ 		 cloud_forcing - OLRT(co2, T)
+					</code></pre>
+				</section>
+				<section>
+					<h3>Nonlinear Root finding</h3>
+					<pre><code data-trim class="python">
+co2 = newton(net_radiation, guess,
+         args=(temperature, cloud_forcing), maxiter=200)
+					</code></pre>
+				</section>
+				<section>
+					<h3>Parameterize OLR</h3>
+					<pre><code data-trim class="python">
+						def OLRT(CO2,T):
+						    x = (T-280.)/(330.-280.)
+						    y = np.log(CO2)
+						    #interpolate coefficients
+						    coeffs = []
+								...
+					</code></pre>
+				</section>
+				<section>
+					<h3>Parameterize Albedo</h3>
+					<pre><code data-trim class="python">
+def albedo(T):
+
+    if T <= T_ice_covered:
+        return albedo_ice
+
+    if T >= T_ice_free:
+        return albedo_ocean
+		...
+					</code></pre>
+				</section>
+			</section>
+			<section>
+				<h3>You have to...</h3>
+				<ul>
+					<li>Identify bifurcation points</li>
+					<li>Classify them into sources/sinks</li>
+					<li>Describe how the climate of the planet changes when $CO_2$ changes</li>
+				</ul>
+			</section>
+</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/math/math.js'},
+					{src: 'plugin/chalkboard/chalkboard.js'},
+					{ src: 'plugin/audio-slideshow/RecordRTC.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true },
+				],
+				math: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: { Macros: { angstrom: "{\\mathring{A}}" } }
+			},
+				audio: {
+					prefix: 'audio/',
+					suffix: '.MP3',
+				},
+				chalkboard: {
+					src: 'chalkboard.json',
+					theme: 'whiteboard',
+					readonly: false,
+				},
+				keyboard: {
+            67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+            66: function() { RevealChalkboard.toggleChalkboard() },     // toggle chalkboard when 'b' is pressed
+            46: function() { RevealChalkboard.clear() },        // clear chalkboard when 'DEL' is pressed
+             8: function() { RevealChalkboard.reset() },        // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function() { RevealChalkboard.download() },     // downlad recorded chalkboard drawing when 'd' is pressed
+            88: function() { RevealChalkboard.colorNext() },    // cycle colors forward when 'x' is pressed
+            89: function() { RevealChalkboard.colorPrev() },    // cycle colors backward when 'y' is pressed
+        },
+			});
+		</script>
+	</body>
+</html>

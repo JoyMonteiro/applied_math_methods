@@ -1,0 +1,25 @@
+.reveal ul {
+    line-height: 2;
+    font-size: 30px;
+}
+
+.reveal div.title {
+  font-size: 30px;
+}
+
+.reveal center {
+margin: auto;
+width: 80em;
+}
+
+.reveal img {
+max-width: 70%;
+height: auto;
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
