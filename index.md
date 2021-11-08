@@ -39,3 +39,6 @@ part of the lecture skipping other parts.
 * Lecture 16: [Differential Equations: Qualitative Analysis (2nd order DEs)](./slides/lecture16/index.html)
 * Lecture 17: [Differential Equations: Wrapup](./slides/lecture17/index.html)
 * Lecture 18: [Differential Equations: Snowball Earth](./slides/lecture18/index.html)
+* Lecture 19: [Differential Equations: PDEs: Preliminaries](./slides/lecture19/index.html)
+* Lecture 20: [Differential Equations: Filtering Equations](./slides/lecture20/index.html)
+* Lecture 21: [Differential Equations: Asymptotic Analysis](./slides/lecture21/index.html)
