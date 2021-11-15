@@ -42,3 +42,4 @@ part of the lecture skipping other parts.
 * Lecture 19: [Differential Equations: PDEs: Preliminaries](./slides/lecture19/index.html)
 * Lecture 20: [Differential Equations: Filtering Equations](./slides/lecture20/index.html)
 * Lecture 21: [Differential Equations: Asymptotic Analysis](./slides/lecture21/index.html)
+* Lecture 22: [Differential Equations: Wave Equation](./slides/lecture22/index.html)
