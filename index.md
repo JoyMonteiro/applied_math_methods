@@ -43,3 +43,7 @@ part of the lecture skipping other parts.
 * Lecture 20: [Differential Equations: Filtering Equations](./slides/lecture20/index.html)
 * Lecture 21: [Differential Equations: Asymptotic Analysis](./slides/lecture21/index.html)
 * Lecture 22: [Differential Equations: Wave Equation](./slides/lecture22/index.html)
+* Lecture 23: [Probability and Statistics: Overview](./slides/lecture23/index.html)
+* Lecture 24: [Probability and Statistics: Discrete Case](./slides/lecture24/index.html)
+* Lecture 25: [Probability and Statistics: Continuous Case](./slides/lecture25/index.html)
+* Lecture 26: [Probability and Statistics: Estimation](./slides/lecture26/index.html)
