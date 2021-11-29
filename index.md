@@ -47,3 +47,6 @@ part of the lecture skipping other parts.
 * Lecture 24: [Probability and Statistics: Discrete Case](./slides/lecture24/index.html)
 * Lecture 25: [Probability and Statistics: Continuous Case](./slides/lecture25/index.html)
 * Lecture 26: [Probability and Statistics: Estimation](./slides/lecture26/index.html)
+* Lecture 27: [Probability and Statistics: Hypothesis Testing](./slides/lecture27/index.html)
+* Lecture 28: [Probability and Statistics: Hypothesis Testing - 2](./slides/lecture28/index.html)
+* Lecture 29: [Probability and Statistics: Hypothesis Testing - 3](./slides/lecture29/index.html)
